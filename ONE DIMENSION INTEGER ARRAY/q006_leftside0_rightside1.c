@@ -17,7 +17,8 @@ int main(){
         if(a[j]==1)
             j--;
     }
+    printf("all zero left side and 1 in right side\n");
     for(i = 0 ; i<10 ; i++)
-        printf("%d\n",a[i]);
+        printf("%d\t",a[i]);
 return 0;
 }
