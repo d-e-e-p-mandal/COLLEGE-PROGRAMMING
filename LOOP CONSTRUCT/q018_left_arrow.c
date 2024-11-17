@@ -16,7 +16,7 @@ print
 //#include<math.h>
 int main(){
     int n;
-    printf("enter number of terms\n");
+    printf("enter number of terms : ");
     scanf("%d",&n);
     for(int i =1; i<=2*n-1 ; i++){
         int space =(i<=n)?n-i:i-n;
