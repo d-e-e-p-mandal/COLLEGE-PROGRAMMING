@@ -7,14 +7,15 @@ int main(){
 			scanf("%d",&a[i]);
 		}
 		for(int i =1   ; i<8 ; i+=2){
-			if (a[i-1]>a[i]){
-				s=a[i-1];
-				a[i-1]=a[i];
-				a[i] =s;
-		    if (a[i]<a[i+1])
-			    s=a[i];
-			    a[i]=a[i+1];
-			    a[i+1] =s;
+			   if(a[i-1]>a[i]){
+				     s=a[i-1];
+				     a[i-1]=a[i];
+				     a[i] =s;
+				  }   
+		    if(a[i]<a[i+1]){
+			      s=a[i];
+			      a[i]=a[i+1];
+			      a[i+1] =s;
 		    }	
 		}
         if (a[i]<a[i-1]){
