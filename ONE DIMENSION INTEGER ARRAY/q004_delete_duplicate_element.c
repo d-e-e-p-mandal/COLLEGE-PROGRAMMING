@@ -20,6 +20,7 @@ int main(){
         }
     }
     newSize=k;
+    printf("After delete duplicate element : \n");
     for( i = 0 ; i<newSize ; i++){
         printf("%d\t",a[i]);
     }   
