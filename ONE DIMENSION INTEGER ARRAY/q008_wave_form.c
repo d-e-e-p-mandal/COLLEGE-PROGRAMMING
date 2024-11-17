@@ -18,11 +18,11 @@ int main(){
 		    a[i+1] =s;
 		}	
 	}
-    if(a[i]<a[i-1]){
+    	if(a[i]<a[i-1]){
 		s=a[i];
 		a[i]=a[i-1];
 		a[i-1] =s;
-    }
+    	}
 	printf("Wave form : \n");
 	for(int i =0  ; i< 10 ; i++){
 		printf("%d\t",a[i]);				
