@@ -2,8 +2,8 @@
 #include <stdio.h>
 int main()
 {
-    int num, res = 1, rnum = 0;
-    printf("enter number\n");
+    int num, res ;
+    printf("Enter number : ");
     scanf("%d", &num);
     while (num){
         res = num % 10;
