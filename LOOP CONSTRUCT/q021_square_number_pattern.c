@@ -17,7 +17,6 @@ int main(){
     printf("Enter first number : ");
     scanf("%d",&a); 
     printf("Enter second number : ");
-    
     scanf("%d",&b);
     
     int x=a;
@@ -25,7 +24,7 @@ int main(){
         for(j = 0 ; j< b*2 -1 ; j++){
             printf("%d",x);
             x=(i>j)?x+1:x;
-            x=(i+j>=b*2-2)?x-1:x;
+            x=((i+j)>=b*2-2)?x-1:x;
         }
         x=a;
         printf("\n");   
