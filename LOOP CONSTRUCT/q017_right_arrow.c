@@ -14,7 +14,7 @@
 
 int main(){
     int n;
-    printf("enter number of terms : ");
+    printf("Enter number of terms : ");
     scanf("%d",&n);
     for(int i=1; i<=2*n-1; i++){
         int star = (i<=n)?n-i+1:i-n+1;
