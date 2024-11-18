@@ -3,7 +3,7 @@
 
 #include<stdio.h>
 int main(){
-    int a[10],i,j,search_element,flag=1,s;
+    int a[10],i,j,search_element,flag=0,s;
     printf("Enter array element : \n");//input
     for(i = 0 ; i< 10 ;i++)
         scanf("%d",&a[i]);
@@ -21,11 +21,11 @@ int main(){
     }
     // search
     int low=0 , high = 9 , mid;
-    while(low<=high&&flag==1){
+    while(low<=high&&flag==0){
         mid=(low+high)/2;
         if(a[mid]==search_element){
-            printf("The element in found at positions %d\n",mid+1);
-            flag=0;
+            flag=1;
+            break;
         }
         else if(a[mid]<search_element)
             low=low+1;
@@ -33,6 +33,8 @@ int main(){
             high=high-1;
     }
     if(flag)
+        printf("The element in found at positions %d\n",mid+1);// shorted positions
+    else
         printf("The element not found\n");
         
 return 0;
