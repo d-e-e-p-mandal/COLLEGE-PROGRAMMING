@@ -1,60 +1,54 @@
-/*
-print (n=10)
+/*HOLLOW DIAMOND STAR USING FUNCTION
+
+Enter number of terms : 10
+Holllow Diamond star : 
 ********************
-*********__*********
-********____********
-*******______*******
-******________******
-*****__________*****
-****____________****
-***______________***
-**________________**
-*__________________*
-**________________**
-***______________***
-****____________****
-*****__________*****
-******________******
-*******______*******
-********____********
-*********__*********
+*********  *********
+********    ********
+*******      *******
+******        ******
+*****          *****
+****            ****
+***              ***
+**                **
+*                  *
+**                **
+***              ***
+****            ****
+*****          *****
+******        ******
+*******      *******
+********    ********
+*********  *********
 ********************
 */
 #include <stdio.h>
-// #include<stdlib.h>
-// #include<math.h>
-void star(int);
-void space(int);
-int main()
-{
+void star_Function(int);
+void spaceFunction(int);
+int main(){
    int n;
-   printf("enter number of terms \n");
+   printf("Enter number of terms : ");
    scanf("%d", &n);
+   printf("Holllow Diamond star : \n");
+   
+   for(int i = 0; i < 2 * n - 1; i++){
+      int star = (i < n) ? n - i : i - (n - 2);
+      int space = (i < n) ?  i : (2 * n - i - 2);
 
-   for (int i = 0; i < 2 * n - 1; i++)
-   {
-      int star_1 = (i < n) ? n - i : i - (n - 2);
-      int space_1 = (i < n) ?  i : (2 * n - i - 2);
-
-      star(star_1);
-      space(space_1);
-      space(space_1);
-      star(star_1);
+      star_Function(star);
+      spaceFunction(space);
+      spaceFunction(space);
+      star_Function(star);
       printf("\n");
    }
 
    return 0;
 }
-void star(int n)
-{
+void star_Function(int n){
     for (; n; n--)
-      {
          printf("*");
-      }
 }
-void space(int n){
+void spaceFunction(int n){
     for (; n; n--)
-      {
-         printf("_");
-      }
+         printf(" ");
 }
