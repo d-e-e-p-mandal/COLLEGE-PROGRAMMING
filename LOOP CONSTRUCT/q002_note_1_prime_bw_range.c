@@ -12,7 +12,7 @@ int main()
         if (i < 2)
             prime = 0;
         else
-            for (int j = 2; j <= +i / 2; j++)
+            for (int j = 2; j <= i / 2; j++)
                 if (i % j == 0)
                 {
                     prime = 0;
