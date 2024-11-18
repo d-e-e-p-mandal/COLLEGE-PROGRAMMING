@@ -1,5 +1,7 @@
-/*
-print 
+/* LEFT ARROW STAR PATTERN
+
+Enter number of terms : 5
+Left arrow star pattern : 
     *****
    ****
   ***
@@ -18,6 +20,8 @@ int main(){
     int n;
     printf("Enter number of terms : ");
     scanf("%d",&n);
+    printf("Left arrow star pattern :\n");
+    
     for(int i =1; i<=2*n-1 ; i++){
         int space =(i<=n)?n-i:i-n;
         int star = space+1;
