@@ -11,6 +11,7 @@ int main(){
         a[i]=a[j];
         a[j]=s;
     }
+    printf("After reverse the element of array : \n");
     for(i = 0 ; i<10 ; i++)//output
         printf("%d\t",a[i]);
         
