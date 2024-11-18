@@ -2,13 +2,12 @@
 #include <stdio.h>
 int main()
 {
-    int num, res, rnum = 0;
+    int num;
     printf("enter number : \n");
     scanf("%d", &num);
     printf("The reverse number is : \n");
     
     while (num){
-        res = num % 10;
         printf("%d",num%10);
         num /= 10;
     }
