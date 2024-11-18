@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main(){
 	int a[10],s,i;
-	printf("enter no  : \n");
+	printf("Enter element of array : \n");
 	for(int i =0  ; i<10 ; i++)	{
 		scanf("%d",&a[i]);
 	}
