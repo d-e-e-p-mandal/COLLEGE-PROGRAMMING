@@ -1,4 +1,4 @@
-//merge two shorted arry 
+//merge two shorted array 
 #include<stdio.h>
 int main(){
     int a[10],b[10],i,j,k=0,s,size_a=10,size_b=10;
