@@ -1,6 +1,6 @@
 /*
-Enter charater in capital letter : G 
-
+Enter charater in capital letter : G
+PATTERN : 
 A B C D E F G G F E D C B A 
   A B C D E F F E D C B A 
     A B C D E E D C B A 
@@ -18,6 +18,8 @@ int main(){
     scanf("%c",&ch);
     
     int n = ch - 64 ,i,j;
+    printf("PATTERN : \n");
+    
     for(i=0 ; i < n ; i++){
         for(j = 0 ; j< i ; j++)
             printf("  ");
@@ -32,7 +34,7 @@ int main(){
         x='A';
         printf("\n");
     }
-    for(j = 0 ; j < 2*n-1 && i==n ; j++)
+    for(j = 0 ; j < 2*n-1 ; j++)
         printf(" ");
     printf("%c",x);
     
