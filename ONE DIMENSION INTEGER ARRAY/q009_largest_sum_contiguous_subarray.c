@@ -1,4 +1,4 @@
-// largest sum of contiguous subarray
+// Largest sum of contiguous subarray
 #include<stdio.h>
 int main(){
     int n,i,max,result;
@@ -17,3 +17,9 @@ int main(){
     
 return 0;
 }
+/*
+Enter the size of array : 8
+Enter the element of array : 
+-2      -3      4       -1      -2      1       5       -3
+Largest sum of contiguous subarray is 7 
+*/
