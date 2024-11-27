@@ -28,9 +28,9 @@ int main(){
             break;
         }
         else if(a[mid]<search_element)
-            low=low+1;
+            low=mid+1;
         else
-            high=high-1;
+            high=mid-1;
     }
     if(flag)
         printf("The element in found at positions %d\n",mid+1);// shorted positions
