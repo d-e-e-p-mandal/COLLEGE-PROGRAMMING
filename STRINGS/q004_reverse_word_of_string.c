@@ -10,7 +10,7 @@ void revword(char *str) {
     char temp;
     for(i=0; i<l;){
         for(j=i+1;str[j]!=' ' && str[j]!='\0';j++);
-            p=i+1;q=j-1; //swaping
+            p=i+1;q=j-1; //swapping
             while(p<q){
                 temp = str[p];
                 str[p] = str[q];
