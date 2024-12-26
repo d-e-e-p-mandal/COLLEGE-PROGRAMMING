@@ -9,7 +9,7 @@ int main(){
     for(i = 0 ; i<10 ; i++ ){
         for(j = i +1 ; j<size ; j++){
             if(a[j]==a[i]){
-                for(k = j ; k< size ; k++){
+                for(k = j ; k< size-1 ; k++){
                     a[k]=a[k+1];
                 }
                 size--;
