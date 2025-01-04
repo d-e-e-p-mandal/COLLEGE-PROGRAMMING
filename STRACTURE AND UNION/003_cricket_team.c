@@ -1,9 +1,5 @@
-/*
-Define a structure called cricket with player name, team name,
-batting average, for 50 players & 5 teams. Print team
-wise list contains names of player with their batting
-average.
-*/
+/* Define a structure called cricket with player name, team name, batting average, for 50 players & 5 teams.
+Print team wise list contains names of player with their batting average. */
 #include<stdio.h>
 #include<string.h>
 typedef struct cricket{
