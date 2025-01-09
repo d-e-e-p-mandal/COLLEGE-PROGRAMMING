@@ -17,10 +17,10 @@ int main(){
         if(flag)
             a[k++]=str[i];
     }
-    printf("%s",a);
+    printf("After delete repeated character : %s",a);
     return 0;
 }
 /*
 OUTPUT :
-This bok  very a
+After delete repeated character : This bok  very a
 */
