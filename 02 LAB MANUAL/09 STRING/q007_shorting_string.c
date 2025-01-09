@@ -23,5 +23,5 @@ int main(){
 }
 /*
 OUTPUT :
-GINRST
+Alphabetical order : GINRST
 */
