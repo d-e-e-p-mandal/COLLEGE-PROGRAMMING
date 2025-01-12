@@ -12,13 +12,17 @@ int main(){
     printf("Enter string : ");
     scanf("%s",str);
     len = strlen(str);
+    if(len==0){ // for str don't have any character
+        printf("The length of the longest substring without repeating characters 0");
+        return 0;
+    }
     for(i=1;i<len;i++){
         count=1;
-        for(j=x;j<i;j++){
-            if(str[j]!=str[i])
+        for(j=x;j<i;j++){   // check for 0 ,1 ,.....(index)
+            if(str[j]!=str[i])  
                 count++;
             else{
-                x=j+1;
+                x=j+1;  // do not check at first when repeated come ,check at last repeated number  
                 break;
             }
                 
