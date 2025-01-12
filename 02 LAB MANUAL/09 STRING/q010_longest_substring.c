@@ -18,7 +18,7 @@ int main(){
             if(str[j]!=str[i])
                 count++;
             else{
-                x=i;
+                x=j+1;
                 break;
             }
                 
