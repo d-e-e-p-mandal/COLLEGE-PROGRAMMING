@@ -8,7 +8,7 @@ Explanation: The answer is "b", with the length of 1.*/
 #include<string.h>
 int main(){
     char str[20];
-    int i,j,len,count=1,maxCount=1,x=0;
+    int i,j,len,count=1,maxCount=1,x=0,flag=1;
     printf("Enter string : ");
     scanf("%s",str);
     len = strlen(str);
@@ -16,20 +16,22 @@ int main(){
         printf("The length of the longest substring without repeating characters 0");
         return 0;
     }
-    for(i=1;i<len;i++){
-        count=1;
-        for(j=x;j<i;j++){   // check for 0 ,1 ,.....(index)
-            if(str[j]!=str[i])  
-                count++;
-            else{
-                x=j+1;  // do not check at first when repeated come ,check at last repeated number  
-                break;
-            }
+    if(flag){
+        for(i=1;i<len;i++){
+            count=1;
+            for(j=x;j<i;j++){   // check for 0 ,1 ,.....(index)
+                if(str[j]!=str[i])  
+                    count++;
+                else{
+                    x=j+1;  // do not check at first when repeated come ,check at last repeated number  
+                     break;
+                }
                 
+            }
+            maxCount=(maxCount<count)?count:maxCount;
         }
-        maxCount=(maxCount<count)?count:maxCount;
+        printf("The length of the longest substring without repeating characters %d",maxCount);
     }
-    printf("The length of the longest substring without repeating characters %d",maxCount);
     return 0;
 }
 /*
