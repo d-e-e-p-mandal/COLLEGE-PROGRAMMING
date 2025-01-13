@@ -27,5 +27,5 @@ int main(){
 /*
 OUTPUT :
 Enter string : amit kumar
-ramuk tima% 
+ramuk tima
 */
