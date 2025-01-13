@@ -14,7 +14,7 @@ int main(){
     len = strlen(str);
     if(len==0){ // for str don't have any character
         printf("The length of the longest substring without repeating characters 0");
-        return 0;
+        flag = 0;
     }
     if(flag){
         for(i=1;i<len;i++){
