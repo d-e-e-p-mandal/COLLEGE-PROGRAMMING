@@ -15,7 +15,7 @@ int main(){
             a[j++]=str[i];
     }
     len=strlen(a);
-    printf("Entered string with out blank space is : %s\n",a);
+    printf("String with out blank space is : %s\n",a);
     printf("Number of character is : %d",len);
     return 0;
 }
