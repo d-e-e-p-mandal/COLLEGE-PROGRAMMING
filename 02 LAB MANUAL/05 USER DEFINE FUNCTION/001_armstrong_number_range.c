@@ -40,5 +40,5 @@ Enter range of number to print armstrong number : 100 500
 153
 370
 371
-407S
+407
 */
