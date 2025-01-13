@@ -27,7 +27,7 @@ int main(){
     printf("if n=3 then y=a - b power x : \n");
     printf("if n=4 then y=a + x power b : \n");
     scanf("%d",&n);
-    int (*afp[4])(int,int,int)={fun1,fun2,fun3,fun3};//array pointer function
+    int (*afp[4])(int,int,int)={fun1,fun2,fun3,fun4};//array pointer function
     printf("y=%d\n",afp[n-1](a,x,b));
     return 0;
 }
