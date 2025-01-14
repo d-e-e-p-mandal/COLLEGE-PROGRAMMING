@@ -1,4 +1,4 @@
-// linear search in array
+// Linear search in array
  #include<stdio.h>
  int main(){
     int a[10],i,search_element,flag=0;
@@ -20,3 +20,11 @@
         
  return 0;
  }
+ /*
+ OUTPUT :
+Enter array element : 
+1       2       3       4       5       6       7       8       9       10
+Enter search element : 
+5
+The element found at position 5
+ */
