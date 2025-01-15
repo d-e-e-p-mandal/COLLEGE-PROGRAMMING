@@ -1,6 +1,4 @@
-// binary search
-
-
+// Binary search
 #include<stdio.h>
 int main(){
     int a[10],i,j,search_element,flag=0,s;
@@ -36,6 +34,13 @@ int main(){
         printf("The element in found at positions %d\n",mid+1);// shorted positions
     else
         printf("The element not found\n");
-        
-return 0;
+    return 0;
 }
+/*
+OUTPUT :
+Enter array element : 
+1       4       6       8       9       21      31      54      65      76
+Enter search element : 
+54
+The element in found at positions 8
+*/
