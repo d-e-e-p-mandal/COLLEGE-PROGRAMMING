@@ -17,8 +17,7 @@ void printHotelByGrade(h *htl,int no_h,char grade){
             printf("Hotel Address :%10s\t",(htl+i)->h_address);
             printf("Hotel grade : %3c\t",(htl+i)->grade);
             printf("Hotel charge : %3d\t",(htl+i)->rc);
-            printf("Number of room : %3u\t",(htl+i)->r_no);
-            printf("\n");
+            printf("Number of room : %3u\n",(htl+i)->r_no);
         } 
     }
 }
