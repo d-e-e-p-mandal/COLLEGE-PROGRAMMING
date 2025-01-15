@@ -1,5 +1,7 @@
-/* Define a structure called cricket with player name, team name, batting average, for 50 players & 5 teams.
-Print team wise list contains names of player with their batting average. */
+/*
+Define a structure called cricket with player name, team name, batting average, for 50 players & 5 teams.
+Print team wise list contains names of player with their batting average.
+*/
 #include<stdio.h>
 #include<string.h>
 typedef struct cricket{
@@ -12,7 +14,7 @@ int main(){
     printf("Enter number of player : ");
     scanf("%d",&n);
     ct player[n];
-    char team[20];
+    char find_team[20];
     for(i=0;i<n;i++){
         printf("Enter player name : ");
         scanf(" %[^\n]",player[i].pl_name);
@@ -22,9 +24,9 @@ int main(){
         scanf(" %d",&player[i].b_avg);
     }
     printf("Enter team name which team list is required : ");
-    scanf(" %[^\n]",team);
+    scanf(" %[^\n]",find_team);
     for(i=0;i<n;i++){
-        if(strcmp(team,player[i].t_name)==0){
+        if(strcmp(find_team,player[i].t_name)==0){
             printf("player name : %20s  team name : %3s   batting avg : %3d\n",player[i].pl_name,player[i].t_name,player[i].b_avg);
             flag=0;
         }
