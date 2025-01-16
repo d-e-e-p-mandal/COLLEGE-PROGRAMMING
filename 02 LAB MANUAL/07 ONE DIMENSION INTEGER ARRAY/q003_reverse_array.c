@@ -1,4 +1,4 @@
-// reversee the element of array
+// Reversee the element of array
 #include<stdio.h>
 int main(){
     int a[10],s,i,j;
@@ -15,5 +15,12 @@ int main(){
     for(i = 0 ; i<10 ; i++)//output
         printf("%d\t",a[i]);
         
-return 0;
+    return 0;
 }
+/*
+OUTPUT :
+Enter the element of array : 
+1       2       3       4       5       6       7       8       9       10
+After reverse the element of array : 
+10      9       8       7       6       5       4       3       2       1 
+*/
