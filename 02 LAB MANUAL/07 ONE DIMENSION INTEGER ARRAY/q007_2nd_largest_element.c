@@ -17,13 +17,16 @@ int main(){
             break;
         }
     }
-    for(i= 0 ; i<10 ; i++){
-        if(max_2<a[i]&& max!=a[i]){
+    for(i= 0 ; i<10 ; i++)
+        if(max_2<a[i]&& max!=a[i])
             max_2=a[i];
-        }
-    }
-    printf("The 2nd max number is %d\n",max_2);
-    
-    
-return 0;
+        
+    printf("The 2nd maximum number is %d\n",max_2);
+    return 0;
 }
+/*
+OUTPUT :
+Enter element of array
+1       3       6       3       5       6       7       2       1       9
+The 2nd maximum number is 7
+*/
