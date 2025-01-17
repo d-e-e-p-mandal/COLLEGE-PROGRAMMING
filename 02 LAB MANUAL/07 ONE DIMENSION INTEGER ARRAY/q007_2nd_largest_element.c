@@ -1,4 +1,4 @@
-// find 2nd largest
+// Find 2nd largest
 #include<stdio.h>
 int main(){
     int a[10],max,max_2,i;
