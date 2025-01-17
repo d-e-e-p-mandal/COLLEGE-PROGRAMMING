@@ -1,4 +1,4 @@
-// delete duplicate element in array
+// Delete duplicate element in array
 #include<stdio.h>  
 int main(){
     int a[10],i,j,k=0,newSize,flag;
@@ -19,10 +19,17 @@ int main(){
             k++;
         }
     }
-    newSize=k;
     printf("After delete duplicate element : \n");
+    newSize=k;
     for( i = 0 ; i<newSize ; i++){
         printf("%d\t",a[i]);
     }   
 return 0;
 }
+/*
+OUTPUT :
+Enter element of array : 
+1       2       3       4       5       6       7       8       1       2
+After delete duplicate element : 
+1       2       3       4       5       6       7       8 
+*/
