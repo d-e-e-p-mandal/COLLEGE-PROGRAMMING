@@ -10,7 +10,6 @@ int main(){
 		if ((a[i]>a[i-1]) && (a[i]>a[i+1]))
 			continue;
 		else if (a[i-1]>a[i+1]){
-			
 			s=a[i-1];
 			a[i-1]=a[i];
 			a[i] =s;
@@ -33,3 +32,10 @@ int main(){
 
     return 0 ;
 }
+/*
+OUTPUT :
+Enter element of array : 
+1       5       7       4       3       2       5       9       89      43
+Wave form : 
+1       7       4       5       3       5       2       89      9       43 
+*/
