@@ -1,5 +1,4 @@
 // PERMUTATION 
-
 #include<stdio.h>
 #include<string.h>
 int fact(int a);    //function declare     
