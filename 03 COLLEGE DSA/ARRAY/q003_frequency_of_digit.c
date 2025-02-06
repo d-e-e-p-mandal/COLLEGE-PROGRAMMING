@@ -18,7 +18,6 @@ int main(){
 
     return 0;
 }
-
 /*
 OUTPUT
 Enter number : 12321
