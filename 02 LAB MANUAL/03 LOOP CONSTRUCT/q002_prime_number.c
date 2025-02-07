@@ -9,13 +9,13 @@ int main()
         printf("Neither prime nor composite\n");  
     }
     else
-    for (int i = 2; i <= num/2; i++){
-        flag=1;
-        if(num%i==0){
-            flag=0;
-           break;  
+        for (int i = 2; i <= num/2; i++){
+            flag=1;
+            if(num%i==0){
+                flag=0;
+                break;  
+            }
         }
-    }
     if(flag==1)
         printf("%d is prime number\n",num);
     if(flag==0)
