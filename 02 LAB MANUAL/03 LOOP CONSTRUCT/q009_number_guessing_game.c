@@ -8,7 +8,7 @@ int main(){
     x=(rand()%100);
     //x=rand(time.h);
     printf("%d\n",x);
-    printf("enter number \n");
+    printf("Enter number \n");
     do{
         scanf("%d",&y);
         if(y==x)
