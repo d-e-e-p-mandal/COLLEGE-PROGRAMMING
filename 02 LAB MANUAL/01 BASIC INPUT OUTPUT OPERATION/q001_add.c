@@ -1,4 +1,4 @@
-// input two number and add
+// Input two number and add
 
 #include<stdio.h>
 //#include<conio.h>
