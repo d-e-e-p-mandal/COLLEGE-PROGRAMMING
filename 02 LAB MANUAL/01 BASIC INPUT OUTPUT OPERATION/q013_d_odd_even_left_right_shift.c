@@ -1,4 +1,4 @@
-// odd even number bitwise operator- '<< & >>'
+// ODD/EVEN number bitwise operator- '<< & >>'
 #include<stdio.h>
 int main()
 {
