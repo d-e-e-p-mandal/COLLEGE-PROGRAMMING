@@ -1,4 +1,4 @@
-// input any number and ptinnt reverse digit
+// Input any number and ptinnt reverse digit
 #include <stdio.h>
 int main()
 {
