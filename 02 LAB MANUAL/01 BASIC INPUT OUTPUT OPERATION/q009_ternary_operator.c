@@ -1,4 +1,4 @@
-// input two number find greatest using ternary operator
+// Input two number find greatest using ternary operator
 
 #include<stdio.h>
 int main(){
