@@ -1,4 +1,4 @@
-// check pallendrome - optimized way
+// Check pallendrome - optimized way
 #include<stdio.h>
 #include<string.h>
 void isPallendrome(char*);//function declare
