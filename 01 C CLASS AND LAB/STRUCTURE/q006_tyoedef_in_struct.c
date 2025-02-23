@@ -1,4 +1,4 @@
-//typedef in structure
+// Typedef in structure
 /* typedef use for rename */
 #include<stdio.h>
 typedef struct student
