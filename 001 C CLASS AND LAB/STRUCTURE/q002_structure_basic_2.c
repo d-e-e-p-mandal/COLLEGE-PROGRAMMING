@@ -6,6 +6,7 @@ typedef struct student{
 	char cl[10];
 	
 }s1;
+
 int main(){
     s1 st;
 	printf("Enter roll number : ");
