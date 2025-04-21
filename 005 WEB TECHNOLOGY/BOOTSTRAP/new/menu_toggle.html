@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toggle Nav Bar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      width: 250px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      height: 100%;
+      left: -250px;
+      top: 0;
+      transition: left 0.3s ease;
+      padding-top: 60px;
+    }
+
+    .navbar a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .open-btn {
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+
+    .navbar.active {
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="open-btn" onclick="toggleNav()">☰ Menu</button>
+
+  <div class="navbar" id="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <script>
+    function toggleNav() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f9c5d1, #a1c4fd);
+            color: #333;
+        }
+
+        nav {
+            background: #ffffffc0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            background-color: #ff6ba3;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .services, .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .services div, .portfolio img {
+            flex: 1 1 30%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .portfolio img {
+            width: 100%;
+            height: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.75rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .services div, .portfolio img {
+                flex: 1 1 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"><strong>Freelancer</strong></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hello Section -->
+    <header>
+        <h1>Hello, I'm a Freelance Designer</h1>
+        <p>I create beautiful websites and digital experiences.</p>
+        <a href="#contact"><button class="btn">Let's Work Together</button></a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate freelance designer with 5+ years of experience in web design, UI/UX, and branding. I love turning ideas into stunning visuals.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services">
+            <div>
+                <h3>Web Design</h3>
+                <p>Responsive and modern websites tailored for your brand.</p>
+            </div>
+            <div>
+                <h3>UI</h3>
+                <p>Clean, intuitive interfaces that offer a smooth user experience.</p>
+            </div>
+            <div>
+                <h3>Branding</h3>
+                <p>Creative logos, color palettes, and brand identity packages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <img src="path" alt="Project 1">
+            <img src="path" alt="Project 2">
+            <img src="path" alt="Project 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Freelancer. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
