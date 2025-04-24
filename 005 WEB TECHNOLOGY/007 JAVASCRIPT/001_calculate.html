@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        fieldset {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px 30px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #res {
+            font-weight: bold;
+            color: #333;
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Calculator</h1>
+            <label for="Input_text1">Enter 1st number:</label>
+            <input type="text" id="Input_text1">
+            
+            <label for="Input_text2">Enter 2nd number:</label>
+            <input type="text" id="Input_text2">
+            
+            <button type="button" onclick="calculate('add')">ADD</button>
+            <button type="button" onclick="calculate('sub')">SUB</button>
+            <button type="button" onclick="calculate('mul')">MUL</button>
+            <button type="button" onclick="calculate('div')">DIV</button>
+            
+            <p>RESULT: <input type="text" id="res" readonly></p>
+        </fieldset>
+    </form>
+
+    <script>
+        function calculate(operation) {
+            let a = parseFloat(document.getElementById("Input_text1").value);
+            let b = parseFloat(document.getElementById("Input_text2").value);
+            let result;
+
+            if (isNaN(a) || isNaN(b)) {
+                result = "Invalid input";
+            } else {
+                switch (operation) {
+                    case 'add':
+                        result = a + b;
+                        break;
+                    case 'sub':
+                        result = a - b;
+                        break;
+                    case 'mul':
+                        result = a * b;
+                        break;
+                    case 'div':
+                        result = b !== 0 ? a / b : "Cannot divide by 0";
+                        break;
+                    default:
+                        result = "Unknown operation";
+                }
+            }
+
+            document.getElementById("res").value = result;
+        }
+    </script>
+</body>
+</html>
