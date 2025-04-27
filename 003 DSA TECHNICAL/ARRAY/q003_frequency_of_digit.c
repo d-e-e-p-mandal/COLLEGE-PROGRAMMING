@@ -3,13 +3,14 @@
 void frequency(int n){
     int i,arr[10]={0,0,0,0,0,0,0,0,0,0};
     while(n){
-        arr[n%10]+=1;
+        arr[n%10]+=1; //arr[n%10]++;
         n/=10;
     }
     for(i=0;i<10 ;i++)
         if(arr[i])
             printf("The number of digit %d is %d\n",i,arr[i]);
 }
+
 int main(){
     int n;
     printf("Enter number : ");
