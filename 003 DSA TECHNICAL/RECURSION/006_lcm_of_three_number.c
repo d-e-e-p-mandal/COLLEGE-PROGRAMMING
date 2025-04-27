@@ -8,6 +8,7 @@ int lcm(int a, int b, int c){
     }
     return i;
 }
+
 int main(){
     int a,b,c;
     printf("Enter three number : ");

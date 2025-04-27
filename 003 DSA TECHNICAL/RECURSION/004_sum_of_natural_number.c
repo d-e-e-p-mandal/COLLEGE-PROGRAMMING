@@ -1,4 +1,5 @@
 // Sum of natural number 
+// function way
 #include<stdio.h>
 int sumofNM(int n){
     if(n==1)
