@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pure CSS Nav Toggle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #nav-toggle {
+      display: none;
+    }
+
+    .nav-toggle-label {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      font-size: 24px;
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 5px;
+    }
+
+    nav {
+      position: fixed;
+      left: -250px;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      padding-top: 60px;
+      transition: left 0.3s ease;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    #nav-toggle:checked + .nav-toggle-label + nav {
+      left: 0;
+    }
+
+   
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="nav-toggle" />
+  <label for="nav-toggle" class="nav-toggle-label">☰ Menu</label>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:has() Toggle Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 10px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      background-color: #444;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    nav {
+      max-height: 0;
+      overflow: hidden;
+      background-color: #333;
+      transition: max-height 0.4s ease;
+    }
+
+    nav a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* ✅ Show nav when checkbox is checked using :has() */
+    .container:has(#toggle:checked) nav {
+      max-height: 500px; /* enough to show all items */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <input type="checkbox" id="toggle">
+    <label for="toggle">☰ Toggle Menu</label>
+
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </nav>
+  </div>
+
+</body>
+</html> -->

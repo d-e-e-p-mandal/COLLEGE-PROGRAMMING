@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Number</title>
+</head>
+<body>
+    <p id="n1">Random Number 1 :</p>
+    <p id="n2">Random Number 2 :</p>
+    <button onclick="genNumber('n1')">Generate N1</button>
+    <button onclick="genNumber('n2')">Generate N2</button>
+
+    <script>
+        function genNumber(id) {
+            let rn;
+            if (id === 'n1') {
+                rn = Math.floor(Math.random() * 100);
+            } else {
+                rn = Array.from({length: 10}, () => Math.floor(Math.random() * 100)).join(', ');
+            }
+
+            document.getElementById(id).innerHTML = `Random Number ${id === 'n1' ? '1' : '2'} : ${rn}`;
+        }
+    </script>
+</body>
+</html>

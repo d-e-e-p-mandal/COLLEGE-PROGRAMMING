@@ -84,7 +84,7 @@
             <button type="button" onclick="calculate('mul')">MUL</button>
             <button type="button" onclick="calculate('div')">DIV</button>
             
-            <p>RESULT: <input type="text" id="res" readonly></p>
+            <p id="result">RESULT: <input type="text" id="res" readonly></p>
         </fieldset>
     </form>
 
@@ -115,7 +115,8 @@
                 }
             }
 
-            document.getElementById("res").value = result;
+        //   document.getElementById("res").value = result;
+            document.getElementById("result").innerHTML = result1;
         }
     </script>
 </body>

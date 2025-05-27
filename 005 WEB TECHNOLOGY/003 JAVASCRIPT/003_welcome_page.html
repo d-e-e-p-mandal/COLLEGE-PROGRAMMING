@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <style>
+    .m {
+      height: 32px;
+    }
+
+    #display {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <label for="usr-name">
+      <p>What is your name?</p>
+    </label>
+    <input type="text" id="usr-name" />
+  </div>
+
+  <marquee behavior="" direction="" class="m">
+    <p id="display"></p>
+  </marquee>
+
+  <button type="button" onclick="isValidName()">Submit</button>
+
+  <script>
+    function isValidName() {
+      let s = document.getElementById("usr-name").value;
+      let d = document.getElementById("display");
+      d.innerHTML = "Welcome : " + s;
+      d.style.color = "blue"; // Set text color
+      d.style.backgroundColor = "red";
+    }
+  </script>
+</body>
+</html>
