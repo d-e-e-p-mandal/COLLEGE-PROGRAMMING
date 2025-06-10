@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      margin-top: 5px;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    .buttons input {
+      padding: 5px 15px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <p> Name : Deep Mandal</p>
+  <div class="container">
+    <div class="header">Output</div>
+    <h2>Feedback Form</h2>
+    <p>Please fill out this form to help us improve our site.</p>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <label for="email">E-mail Address:</label>
+      <input type="text" id="email" name="email">
+
+      <label>Things you liked:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="liked" value="design"> Site design
+        <input type="checkbox" name="liked" value="links"> Links
+        <input type="checkbox" name="liked" value="ease"> Ease of use
+        <input type="checkbox" name="liked" value="images"> Images
+        <input type="checkbox" name="liked" value="code"> Source code
+      </div>
+
+      <label>How did you get to our site?:</label>
+      <div class="radio-group">
+        <input type="radio" name="source" value="search"> Search engine
+        <input type="radio" name="source" value="links"> Links from another site
+        <input type="radio" name="source" value="book"> Reference in a book
+        <input type="radio" name="source" value="other"> Other
+      </div>
+
+      <label for="rating">Rate our site:</label>
+      <select id="rating" name="rating">
+        <option>10</option>
+        <option>9</option>
+        <option>8</option>
+        <option>7</option>
+        <option>6</option>
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+      </select>
+
+      <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

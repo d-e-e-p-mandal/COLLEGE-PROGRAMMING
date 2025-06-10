@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Date Example</title>
+</head>
+<body>
+    <h2>Click the Button to Display Current Date and Time</h2>
+
+    <input type="text" id="dateBox" readonly>
+    <br><br>
+    <button onclick="displayDate()">Display Date</button>
+
+    <script>
+        function displayDate() {
+            const currentDate = new Date();
+            document.getElementById("dateBox").value = currentDate.toString();
+        }
+    </script>
+
+</body>
+</html>

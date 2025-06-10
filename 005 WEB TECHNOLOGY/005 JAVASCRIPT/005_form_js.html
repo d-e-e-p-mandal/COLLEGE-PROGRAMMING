@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form id="user-form">
+        <div>
+            <label for="usr-name"> *Name : </label>
+            <input type="text" id="usr-name" name="username" placeholder="Enter your Name" required>
+        </div>
+        <fieldset>
+            <legend>Gender :</legend>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female">Female
+        </fieldset>
+        <div>
+           <label for="usr-birth-date">Date of Birth :</label>
+           <input type="date" id="usr-birth-date" name="dob">
+        </div>
+        <div>
+            <input type="submit" id="form-submit">
+            <input type="reset" id="form-reset">
+        </div>
+    </form>
+
+    <script>
+        const form = document.getElementById('user-form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            const name = document.getElementById('usr-name').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const dob = document.getElementById('usr-birth-date').value;
+
+            // Simple validation (name required is already enforced by HTML)
+            if (!dob) {
+                alert("Please enter your date of birth.");
+                return;
+            }
+
+            alert(`Submitted Details:\nName: ${name}\nGender: ${gender}\nDate of Birth: ${dob}`);
+        });
+    </script>
+</body>
+</html>

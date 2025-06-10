@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Record Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+        }
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Record Form</h2>
+
+    <form id="studentForm" onsubmit="return validateForm()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="roll">
+
+        <br><br>
+        <input type="submit" value="Submit">
+        <p class="error" id="errorMsg"></p>
+    </form>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            let age = document.getElementById("age").value;
+            let email = document.getElementById("email").value.trim();
+            let roll = document.getElementById("roll").value.trim();
+            let errorMsg = document.getElementById("errorMsg");
+
+            errorMsg.textContent = ""; // Clear previous errors
+
+            if (name === "" || age === "" || email === "" || roll === "") {
+                errorMsg.textContent = "All fields are required.";
+                return false;
+            }
+
+            if (isNaN(age) || age <= 0) {
+                errorMsg.textContent = "Please enter a valid age.";
+                return false;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                errorMsg.textContent = "Please enter a valid email address.";
+                return false;
+            }
+
+            // If everything is valid
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
